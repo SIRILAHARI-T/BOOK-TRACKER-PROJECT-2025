@@ -1,0 +1,7 @@
+com\example\booktracker\entity\User.class
+com\example\booktracker\entity\Book.class
+com\example\booktracker\BookTrackerApplication.class
+com\example\booktracker\controller\BookController.class
+com\example\booktracker\controller\UserController.class
+com\example\booktracker\repository\BookRepository.class
+com\example\booktracker\repository\UserRepository.class

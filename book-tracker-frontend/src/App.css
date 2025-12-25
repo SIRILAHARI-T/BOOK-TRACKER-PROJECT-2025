@@ -1,0 +1,119 @@
+/* Reset and layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff89f, #ffd666); /* yellow gradient background */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #000; /* make all body text black by default */
+}
+
+/* Floating animation for emojis or icons */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Main container */
+.app-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Glass card */
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 3.5rem 4rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  color: #000; /* text black inside card */
+  width: 400px;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Heading with floating emoji */
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  color: #000; /* black heading */
+  text-shadow: none; /* remove white glow */
+  animation: float 3s ease-in-out infinite;
+}
+
+p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  color: #000; /* black paragraph text */
+  opacity: 0.9;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #000; /* black text on buttons */
+}
+
+/* Login button - glowing yellow */
+.login {
+  background: linear-gradient(45deg, #f7e12e, #ffca33); /* yellow gradient */
+  color: #000; /* black text */
+  box-shadow: 0 0 15px rgba(255, 223, 46, 0.6);
+}
+
+.login:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px rgba(255, 223, 46, 0.8);
+}
+
+/* Register button - same yellow as login */
+.register {
+  background: linear-gradient(45deg, #f7e12e, #ffca33); /* yellow gradient */
+  color: #000; /* black text */
+  box-shadow: 0 0 15px rgba(255, 223, 46, 0.6);
+}
+
+.register:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px rgba(255, 223, 46, 0.8);
+}
+
+/* Floating emoji background */
+.floating-icon {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.2;
+  animation: float 5s ease-in-out infinite;
+}
+
+.icon1 { top: 10%; left: 10%; }
+.icon2 { bottom: 15%; right: 12%; }
+.icon3 { top: 20%; right: 25%; }

@@ -1,0 +1,93 @@
+.bookslist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff89f, #ffd666); /* yellow gradient background */
+  font-family: "Poppins", sans-serif;
+  color: #000; /* default black text */
+}
+
+.bookslist-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 2.5rem 3rem;
+  width: 500px;
+  max-width: 90%;
+  color: #000; /* text black inside card */
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.bookslist-card h2 {
+  margin-bottom: 1rem;
+  color: #000; /* black heading */
+}
+
+.bookslist {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.bookslist li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); /* subtle black border for contrast */
+  color: #000; /* book name text black */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-actions .btn.edit {
+  background: #4caf50; /* green */
+  color: #000; /* black text instead of white */
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.book-actions .btn.edit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+}
+
+.book-actions .btn.delete {
+  background: #f44336; /* red */
+  color: #000; /* black text instead of white */
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.book-actions .btn.delete:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(244, 67, 54, 0.7);
+}
+
+.btn.back {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #f7e12e, #ffca33); /* yellow gradient */
+  color: #000; /* black text */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.back:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 223, 46, 0.7); /* yellow hover shadow */
+}

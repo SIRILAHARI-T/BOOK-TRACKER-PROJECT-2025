@@ -1,0 +1,70 @@
+.addbook-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff9c4, #fff176); /* yellow gradient background */
+  font-family: "Poppins", sans-serif;
+}
+
+.addbook-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 2.5rem 3rem;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  color: #000; /* black text on yellow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.addbook-card h2 {
+  margin-bottom: 1.5rem;
+  color: #fbc02d; /* bright yellow heading */
+}
+
+.addbook-card input,
+.addbook-card select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  border: 2px solid #fbc02d; /* yellow border */
+  outline: none;
+  font-size: 1rem;
+}
+
+.addbook-card input:focus,
+.addbook-card select:focus {
+  border-color: #fdd835; /* brighter yellow on focus */
+  box-shadow: 0 0 5px #fdd835;
+}
+
+.addbook-card button {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(45deg, #fbc02d, #fdd835); /* yellow button gradient */
+  color: black;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.addbook-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(253, 216, 53, 0.7);
+}
+
+.btn.back {
+  background: linear-gradient(45deg, #fdd835, #fbc02d); /* yellow back button */
+  margin-top: 10px;
+}
+
+.btn.back:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(253, 216, 53, 0.7);
+}
+

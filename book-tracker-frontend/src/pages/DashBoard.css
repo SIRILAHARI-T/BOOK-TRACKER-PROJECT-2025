@@ -1,0 +1,89 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff89f, #ffd666); /* yellow gradient background */
+  font-family: "Poppins", sans-serif;
+  color: #000; /* default black text */
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 500px;
+  max-width: 90%; /* responsive for small screens */
+  color: #000; /* text black */
+  animation: slideIn 0.8s ease;
+}
+
+.dashboard-card h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #000; /* black heading */
+}
+
+.dashboard-card p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: #000; /* black paragraph */
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* wraps buttons on small screens */
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  color: #000; /* black button text */
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 120px; /* consistent button width */
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(255, 223, 46, 0.7); /* yellow shadow */
+}
+
+/* Button specific colors */
+.btn.add {
+  background: linear-gradient(45deg, #fff89f, #ffd666); /* yellow gradient */
+  color: #000; /* black text */
+}
+
+.btn.view {
+  background: linear-gradient(45deg, #ffb347, #ffcc33); /* yellow gradient */
+  color: #000; /* black text for contrast */
+}
+
+.btn.logout {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  color: #000; /* black text */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
