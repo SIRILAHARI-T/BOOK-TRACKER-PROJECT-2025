@@ -29,4 +29,4 @@ Book Tracker is a web application that helps you organize and manage the books y
    ```bash
    git clone <your-repo-url>
 ## Frontend app images
-The images of the application are inside the folder "images".
+The images of the application are inside the folder "images" .
